@@ -1,0 +1,153 @@
+$light-pink : #FDF3F1;
+$light-green : #96BA7B;
+$color-gray : #737373;
+
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+
+%extra-padding{
+    padding-top:15vh;
+    padding-bottom:15vh;
+}
+
+nav {
+    background-color: $light-pink;
+    .navbar-brand{
+        font-weight: 600;
+    }
+    .collapse{
+        color: #737373;
+    }
+}
+
+.login{
+    color: $light-green;
+}
+
+.join-us{
+    background-color: $light-green !important ;
+    border: 1px solid $light-green;
+    color: white;
+}
+
+.description{
+    color: $color-gray;
+}
+
+#topSection{
+    background-color: $light-pink;
+    .hero1 {
+        img{
+            height: 100%;
+            width : 100%
+        }
+    }
+    .learn-more{
+        background-color: $light-pink !important ;
+        border: 1px solid $light-green;
+        color: $light-green;
+    }
+}
+
+#packages{
+    // .package-card{
+    //     height : 40vh
+    // }
+    @extend %extra-padding;
+    .horizonntal-line{
+        width:20%;
+        height : 5px;
+        background-color: #A01A10;
+    }
+    .description{
+        color: $color-gray;
+    }
+    .card-image{
+        background-color: $light-green;
+        width: fit-content;
+    }
+    .card-line{
+        width:20%;
+        height : 2px;
+        background-color: #A01A10;
+    }
+    .card{
+        .description{
+            font-size: small;
+        }
+    }
+    .learn-more{
+        .arrow{
+            transition: all .3s ease;
+            margin-left: 0px;
+            margin-bottom: -3px;
+        }
+    }
+    .learn-more:hover{
+        .arrow{
+            margin-left: 5px;
+        }
+    }
+}
+#socialMedia{
+    @extend %extra-padding;
+    .card {
+        width: fit-content;
+        max-width: 2;
+    }
+    .carousel-card{
+        width: fit-content;
+        margin: auto;
+    }
+    .p-carousel-item{
+        width: fit-content;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 40px;
+    }
+    .carousel-col{
+        margin-left: -2%;
+        height: 50vh;
+    }
+    .p-carousel-container{
+        padding-bottom: 200px;
+    }
+    .social-media-icon{
+        background-color: $light-green;
+        width: fit-content;
+    }
+}
+::ng-deep {
+    body .p-component.p-carousel.p-carousel-horizontal,
+    body .p-component.p-carousel.p-carousel-horizontal .p-carousel-content,
+    body .p-component.p-carousel.p-carousel-horizontal .p-carousel-content .p-carousel-container {
+      height: 100%;
+    }
+}
+
+#contact-us{
+    @extend %extra-padding;
+    background-color: $light-pink;
+    .warning-text{
+        color: red;
+    }
+}
+
+.email-input{
+    background-color: #e6e6e6;
+    color: #737373;
+    width: 45vw;
+    border : 0.5px solid $color-gray;
+    padding: 10px 30px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.get-in-touch{
+    min-width: fit-content;
+}
+#credits{
+    background-color: #e6e6e6;
+    padding-top : 2vh;
+    padding-bottom: 1vh;
+}
